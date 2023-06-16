@@ -577,3 +577,51 @@ button {
   background: rgba(255, 37, 33, 0.3);
   filter: blur(100px);
 }
+
+/* WORLD SECTION */
+
+.world__title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+}
+
+.world__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.world__inner img {
+  transform: translateX(-80px);
+  -webkit-transform: translateX(-80px);
+  -moz-transform: translateX(-80px);
+  -ms-transform: translateX(-80px);
+  -o-transform: translateX(-80px);
+}
+
+.graphic {
+  min-width: 264px;
+  height: 264px;
+  background-image: url("../images/chart-graphic.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.graphic b {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+}
+
+.graphic p {
+  font-size: 12px;
+  line-height: 15px;
+  max-width: 110px;
+  text-align: center;
+}
