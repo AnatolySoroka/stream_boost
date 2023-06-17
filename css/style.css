@@ -78,6 +78,7 @@ button {
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   cursor: pointer;
+  border: 2px solid transparent;
 }
 
 @media (min-width: 769px) {
@@ -625,6 +626,11 @@ button {
   line-height: 15px;
   max-width: 110px;
   text-align: center;
+  transition: all 0.7s ease 0.6s;
+  -webkit-transition: all 0.7s ease 0.6s;
+  -moz-transition: all 0.7s ease 0.6s;
+  -ms-transition: all 0.7s ease 0.6s;
+  -o-transition: all 0.7s ease 0.6s;
 }
 
 /* PRICING SECTION */
@@ -732,6 +738,29 @@ button {
   line-height: 34px;
 }
 
+.animate-items {
+  transition: all 1s ease 0.5s;
+  -webkit-transition: all 1s ease 0.5s;
+  -moz-transition: all 1s ease 0.5s;
+  -ms-transition: all 1s ease 0.5s;
+  -o-transition: all 1s ease 0.5s;
+  transform: translateY(-50px);
+  -webkit-transform: translateY(-50px);
+  -moz-transform: translateY(-50px);
+  -ms-transform: translateY(-50px);
+  -o-transform: translateY(-50px);
+  opacity: 0;
+}
+
+.animate-items.animate {
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  opacity: 1;
+}
+
 label {
   display: inline-block;
   font-size: 15px;
@@ -799,6 +828,26 @@ input#submit {
   position: absolute;
   right: 245px;
   top: 224px;
+  opacity: 0;
+  transition: all 1s ease 0.6s;
+  -webkit-transition: all 1s ease 0.6s;
+  -moz-transition: all 1s ease 0.6s;
+  -ms-transition: all 1s ease 0.6s;
+  -o-transition: all 1s ease 0.6s;
+  transform: translate(-15px, -15px);
+  -webkit-transform: translate(-15px, -15px);
+  -moz-transform: translate(-15px, -15px);
+  -ms-transform: translate(-15px, -15px);
+  -o-transform: translate(-15px, -15px);
+}
+
+.magnifier-shadow.animate {
+  transform: translate(0px, 0px);
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  opacity: 1;
 }
 
 /* FOOTER SECTION */
@@ -876,6 +925,26 @@ input#submit {
   position: absolute;
   top: 87px;
   left: -92px;
+  transition: all 2s ease 0.6s;
+  -webkit-transition: all 2s ease 0.6s;
+  -moz-transition: all 2s ease 0.6s;
+  -ms-transition: all 2s ease 0.6s;
+  -o-transition: all 2s ease 0.6s;
+  transform: translate(50px, -50px);
+  -webkit-transform: translate(50px, -50px);
+  -moz-transform: translate(50px, -50px);
+  -ms-transform: translate(50px, -50px);
+  -o-transform: translate(50px, -50px);
+  opacity: 0;
+}
+
+.drone.animate {
+  transform: translate(0px, 0px);
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  opacity: 1;
 }
 
 .try__offer {
@@ -934,4 +1003,80 @@ input#submit {
 
 .work__item p {
   text-align: center;
+}
+
+/* HEADING SECTION */
+
+.heading {
+  padding: 60px 0 100px;
+}
+
+.heading-img {
+  position: absolute;
+  left: -171px;
+  top: -122px;
+}
+
+.check-icon {
+  position: absolute;
+  z-index: 3;
+  top: 143px;
+  left: 6px;
+}
+
+.check-icon-shadow {
+  position: absolute;
+  z-index: 1;
+  top: 208px;
+  left: -57px;
+  transition: all 1s ease 0.6s;
+  -webkit-transition: all 1s ease 0.6s;
+  -moz-transition: all 1s ease 0.6s;
+  -ms-transition: all 1s ease 0.6s;
+  -o-transition: all 1s ease 0.6s;
+  transform: translate(0px, 0px);
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+}
+
+.check-icon-shadow.animate {
+  transform: translate(0px, 0px);
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+.heading__inner {
+  position: relative;
+}
+
+.heading__offer {
+  max-width: 456px;
+  /* margin-left: auto; */
+  margin: 95px 0 33px auto;
+}
+
+.heading__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.heading__subtitle {
+  margin: 20px 0 40px;
+  color: var(--dimGrayBlue);
+}
+
+.heading__buttons {
+  display: flex;
+  gap: 24px;
+}
+
+.heading__btn {
+  display: inline-block;
+  min-width: 168px;
 }
