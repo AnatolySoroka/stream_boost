@@ -179,22 +179,55 @@ button {
 
 .rocket-img {
   position: absolute;
-  top: 60px;
-  left: 170px;
-  animation: fadeInDown;
-  -webkit-animation: fadeInDown;
-  -webkit-animation: fadeInDown;
-  animation-duration: 4s;
+  top: 91px;
+  left: 120px;
+}
+
+.rocket-img.animate-items {
+  transform: translate(0px, -100px);
+  -webkit-transform: translate(0px, -100px);
+  -moz-transform: translate(0px, -100px);
+  -ms-transform: translate(0px, -100px);
+  -o-transform: translate(0px, -100px);
+  transition: 2s ease 0.5s;
+  -webkit-transition: 2s ease 0.5s;
+  -moz-transition: 2s ease 0.5s;
+  -ms-transition: 2s ease 0.5s;
+  -o-transition: 2s ease 0.5s;
+}
+
+.rocket-img.animate {
+  opacity: 1;
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
 }
 
 .rocket-shadow {
   position: absolute;
-  top: 190px;
-  left: 210px;
-  animation: fadeInTopRight;
-  -webkit-animation: fadeInTopRight;
-  -webkit-animation: fadeInTopRight;
-  animation-duration: 4s;
+  top: 236px;
+  left: 154px;
+
+  transform: translate(0px, 0px);
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+}
+
+.rocket-shadow.animate-items {
+  transition: all 4s ease 0.5s;
+  -webkit-transition: all 4s ease 0.5s;
+  -moz-transition: all 4s ease 0.5s;
+  -ms-transition: all 4s ease 0.5s;
+  -o-transition: all 4s ease 0.5s;
+  transform: translate(0px, 0px);
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
 }
 
 .headphones-img {
@@ -242,6 +275,7 @@ button {
 }
 
 .hero__offer {
+  z-index: -1;
   margin-top: 100px;
   max-width: 542px;
 }
@@ -1056,7 +1090,6 @@ input#submit {
 
 .heading__offer {
   max-width: 456px;
-  /* margin-left: auto; */
   margin: 95px 0 33px auto;
 }
 
