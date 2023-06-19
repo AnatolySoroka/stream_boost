@@ -1053,6 +1053,11 @@ input#submit {
   min-width: 166px;
 }
 
+.try-img-mobile {
+  display: none;
+  max-width: 380px;
+}
+
 /* WORK SECTION */
 
 .work {
@@ -1214,6 +1219,17 @@ input#submit {
   .form {
     margin: 0 auto;
   }
+  .try__offer {
+    margin-bottom: 30px;
+  }
+  .try__inner {
+    flex-direction: column;
+  }
+  .try__btn {
+    max-width: 281px;
+    margin: 0 auto;
+    display: block;
+  }
 }
 
 @media (max-width: 950px) {
@@ -1372,12 +1388,60 @@ input#submit {
   .pricing__bottom {
     width: 96%;
   }
-  .contact-img {
-    max-width: 100%;
+  .contact-img,
+  .contact__img {
+    max-width: 419px;
   }
-  .magnifier,
+  .magnifier {
+    width: 42px;
+    left: 257px;
+    top: 90px;
+  }
+  .magnifier-shadow {
+    width: 60px;
+    left: 227px;
+    top: 135px;
+  }
   .dots-icon {
-    width: 10%;
+    width: 40px;
+    left: 85px;
+    top: 55px;
+  }
+  .work__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .double-chevron {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+  }
+  .work {
+    padding-bottom: 40px;
+  }
+  .try {
+    padding-bottom: 40px;
+  }
+  .try__img {
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+  }
+  .try-img {
+    display: none;
+  }
+  .try-img-mobile {
+    display: block;
+    max-width: 380px;
+  }
+  .drone {
+    width: 92px;
+    top: 10px;
+    left: 10px;
   }
 }
 
@@ -1419,5 +1483,36 @@ input#submit {
   }
   .footer__text {
     max-width: 100%;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .footer__copyright {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .contact-img,
+  .contact__img {
+    max-width: 400px;
+  }
+  .contact__img {
+    transform: translateX(-45px);
+    -webkit-transform: translateX(-45px);
+    -moz-transform: translateX(-45px);
+    -ms-transform: translateX(-45px);
+    -o-transform: translateX(-45px);
+  }
+  .magnifier {
+    width: 42px;
+    left: 237px;
+    top: 80px;
+  }
+  .magnifier-shadow {
+    width: 60px;
+    left: 207px;
+    top: 125px;
+  }
+  .try-img-mobile {
+    display: block;
+    max-width: 320px;
   }
 }
