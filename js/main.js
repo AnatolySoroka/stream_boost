@@ -35,3 +35,13 @@ if (animItems.length > 0) {
 
     }, 300)
 }
+
+
+const burgerBtn = document.querySelector('.burger__btn');
+
+burgerBtn.addEventListener('click', onBurgerBtn);
+
+function onBurgerBtn() {
+    document.querySelector('.menu').classList.toggle('show');
+    document.querySelector('.header__btn').classList.toggle('show')
+}
