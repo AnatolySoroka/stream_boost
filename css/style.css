@@ -210,8 +210,9 @@ button {
 
 .hero__img {
   position: absolute;
-  right: -164px;
+  right: -156px;
   top: -77px;
+  max-width: 921px;
 }
 
 .rocket-img {
@@ -281,10 +282,18 @@ button {
 }
 @keyframes headphones {
   30% {
-    top: 344px;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
   }
   100% {
-    top: 310px;
+    transform: translateY(-20px);
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
   }
 }
 
@@ -302,12 +311,18 @@ button {
 }
 @keyframes headphones-shadow {
   30% {
-    top: 422px;
-    right: 297px;
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
   }
   100% {
-    top: 408px;
-    right: 267px;
+    transform: translate(20px, -10px);
+    -webkit-transform: translate(20px, -10px);
+    -moz-transform: translate(20px, -10px);
+    -ms-transform: translate(20px, -10px);
+    -o-transform: translate(20px, -10px);
   }
 }
 
@@ -1196,12 +1211,43 @@ input#submit {
 /* ADAPTIVE */
 
 @media (max-width: 1130px) {
-  .hero__img {
+  /* .hero__img {
     position: static;
     margin-top: 30px;
-  }
+  } */
   .hero {
-    padding: 60px 0 80px;
+    padding: 60px 0 90px;
+  }
+  .hero-img {
+    width: 731px;
+  }
+  .rocket-img {
+    top: 66px;
+    left: 75px;
+    width: 80px;
+  }
+  .rocket-shadow {
+    top: 187px;
+    left: 111px;
+    width: 118px;
+  }
+  .microphone-img {
+    right: 173px;
+    bottom: 116px;
+    width: 125px;
+  }
+  .headphones-img {
+    right: 286px;
+    top: 268px;
+    width: 95px;
+  }
+  .headphones-shadow {
+    right: 245px;
+    top: 338px;
+    width: 140px;
+  }
+  .hero__offer {
+    max-width: 475px;
   }
   .about__content {
     max-width: 100%;
@@ -1275,6 +1321,16 @@ input#submit {
 }
 
 @media (max-width: 950px) {
+  .hero__offer {
+    max-width: 542px;
+  }
+  .hero__img {
+    position: relative;
+    right: 0px;
+    top: 30px;
+    width: 721px;
+    margin: 0 auto;
+  }
   .burger__btn {
     position: absolute;
     top: 30px;
@@ -1410,6 +1466,38 @@ input#submit {
 }
 
 @media (max-width: 769px) {
+  .hero-img {
+    width: 531px;
+    margin: 0 auto;
+  }
+  .hero__img {
+    width: 531px;
+  }
+  .rocket-img {
+    top: 49px;
+    left: 52px;
+    width: 60px;
+  }
+  .rocket-shadow {
+    top: 135px;
+    left: 75px;
+    width: 88px;
+  }
+  .microphone-img {
+    right: 128px;
+    bottom: 82px;
+    width: 95px;
+  }
+  .headphones-img {
+    right: 206px;
+    top: 201px;
+    width: 65px;
+  }
+  .headphones-shadow {
+    right: 176px;
+    top: 245px;
+    width: 90px;
+  }
   .hero__offer {
     max-width: 100%;
   }
@@ -1423,9 +1511,6 @@ input#submit {
   }
   .hero__btn:first-child {
     width: 281px;
-  }
-  .hero-img {
-    width: 731px;
   }
   .about__top {
     padding: 40px 16px 0px;
@@ -1531,6 +1616,31 @@ input#submit {
 }
 
 @media (max-width: 426px) {
+  .rocket-img {
+    top: 49px;
+    left: 42px;
+    width: 45px;
+  }
+  .rocket-shadow {
+    top: 108px;
+    left: 65px;
+    width: 68px;
+  }
+  .microphone-img {
+    right: 100px;
+    bottom: 70px;
+    width: 65px;
+  }
+  .headphones-img {
+    right: 168px;
+    top: 155px;
+    width: 50px;
+  }
+  .headphones-shadow {
+    right: 140px;
+    top: 195px;
+    width: 70px;
+  }
   .hero__buttons {
     flex-direction: column;
     align-items: center;
@@ -1539,8 +1649,9 @@ input#submit {
     font-size: 16px;
     line-height: 19px;
   }
-  .hero-img {
-    width: 431px;
+  .hero-img,
+  .hero__img {
+    width: 420px;
   }
   .about {
     padding-bottom: 40px;
@@ -1577,7 +1688,7 @@ input#submit {
   }
   .contact-img,
   .contact__img {
-    max-width: 400px;
+    max-width: 380px;
   }
   .contact__img {
     transform: translateX(-45px);
@@ -1588,12 +1699,12 @@ input#submit {
   }
   .magnifier {
     width: 42px;
-    left: 237px;
+    left: 220px;
     top: 80px;
   }
   .magnifier-shadow {
     width: 60px;
-    left: 207px;
+    left: 193px;
     top: 125px;
   }
   .try-img-mobile {
