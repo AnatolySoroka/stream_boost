@@ -1603,30 +1603,30 @@ input#submit {
   .about-img {
     width: 300px;
     margin: 0 auto;
-    transform: translateX(-30px);
-    -webkit-transform: translateX(-30px);
-    -moz-transform: translateX(-30px);
-    -ms-transform: translateX(-30px);
-    -o-transform: translateX(-30px);
+    transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+    -moz-transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    -o-transform: translateX(-10px);
   }
   .speaker {
     top: 25px;
-    left: 105px;
+    left: 125px;
     width: 70px;
   }
   .speaker-shadow {
     top: 58px;
-    left: 57px;
+    left: 77px;
     width: 130px;
   }
   .icon-love {
     top: 64px;
-    left: -2px;
+    left: 18px;
     width: 32px;
   }
   .icon-like {
     top: 48px;
-    right: 60px;
+    right: 40px;
     width: 25px;
   }
 }
