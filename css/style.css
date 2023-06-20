@@ -81,21 +81,19 @@ button {
   border: 2px solid transparent;
 }
 
-@media (min-width: 769px) {
-  .violet__btn:hover {
-    background-color: #57329c;
-  }
+.violet__btn:hover {
+  background-color: #57329c;
+}
 
-  .how__btn:hover {
-    background-color: #000;
-    color: #ffffff;
-  }
+.how__btn:hover {
+  background-color: #000;
+  color: #ffffff;
+}
 
-  .about__btn:hover {
-    background-color: #fff;
-    color: #000;
-    border-color: #000;
-  }
+.about__btn:hover {
+  background-color: #fff;
+  color: #000;
+  border-color: #000;
 }
 
 .how__btn {
@@ -1323,9 +1321,70 @@ input#submit {
     margin: 0 auto;
     max-width: 688px;
   }
+  .heading-img {
+    left: -44px;
+    top: -72px;
+    width: 600px;
+  }
+  .check-icon {
+    top: 103px;
+    left: 75px;
+    width: 70px;
+  }
+  .check-icon-shadow {
+    top: 151px;
+    left: 25px;
+    width: 100px;
+  }
+}
+
+@media (max-width: 1035px) {
+  .heading-img {
+    left: -44px;
+    top: 0px;
+    width: 500px;
+  }
+  .check-icon {
+    top: 139px;
+    left: 62px;
+    width: 60px;
+  }
+  .check-icon-shadow {
+    top: 182px;
+    left: 25px;
+    width: 80px;
+  }
 }
 
 @media (max-width: 950px) {
+  .heading__img {
+    position: relative;
+    width: 500px;
+    margin: 0 auto;
+  }
+  .heading__inner {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .heading-img {
+    position: static;
+    margin: 0 auto;
+  }
+  .check-icon {
+    top: 139px;
+    left: 100px;
+    width: 60px;
+  }
+  .check-icon-shadow {
+    top: 187px;
+    left: 62px;
+    width: 80px;
+  }
+  .heading__offer {
+    max-width: 406px;
+    margin: 95px auto 33px 0;
+  }
+
   .hero__offer {
     max-width: 542px;
   }
@@ -1627,6 +1686,32 @@ input#submit {
 }
 
 @media (max-width: 426px) {
+  .heading__offer {
+    margin: 40px auto 33px 0;
+  }
+  .heading__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  .heading__buttons a {
+    width: 281px;
+  }
+  .heading__img,
+  .heading-img {
+    width: 350px;
+  }
+  .check-icon {
+    top: 112px;
+    left: 79px;
+    width: 40px;
+  }
+  .check-icon-shadow {
+    top: 128px;
+    left: 46px;
+    width: 60px;
+  }
   .rocket-img {
     top: 49px;
     left: 42px;
