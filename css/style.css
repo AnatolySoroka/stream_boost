@@ -703,6 +703,10 @@ button {
   align-items: center;
 }
 
+.world-map-mobile {
+  display: none;
+}
+
 .world__inner img {
   transform: translateX(-80px);
   -webkit-transform: translateX(-80px);
@@ -1613,6 +1617,12 @@ input#submit {
     top: 52px;
     right: 60px;
     width: 32px;
+  }
+  .world-map {
+    display: none;
+  }
+  .world-map-mobile {
+    display: block;
   }
 }
 
