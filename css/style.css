@@ -413,8 +413,8 @@ button {
 
 .speaker {
   position: absolute;
-  top: 105px;
-  left: 192px;
+  top: 0px;
+  left: 105px;
   animation: fadeInDown;
   -webkit-animation: fadeInDown;
   -webkit-animation: fadeInDown;
@@ -424,8 +424,8 @@ button {
 
 .speaker-shadow {
   position: absolute;
-  top: 179px;
-  left: 95px;
+  top: 72px;
+  left: 22px;
   animation: fadeIn;
   -webkit-animation: fadeIn;
   -webkit-animation: fadeIn;
@@ -435,9 +435,14 @@ button {
 
 .about-img {
   position: absolute;
-  left: -135px;
-  top: 39px;
+  left: -213px;
+  top: -67px;
   z-index: 2;
+}
+
+.about__img {
+  position: relative;
+  /* width: 688px; */
 }
 
 .about__img-inner {
@@ -459,8 +464,8 @@ button {
 
 .icon-like {
   position: absolute;
-  left: 374px;
-  top: 112px;
+  left: 318px;
+  top: 14px;
   animation-name: like;
   -webkit-animation-name: like;
   animation-iteration-count: infinite;
@@ -472,17 +477,25 @@ button {
 
 @keyframes like {
   0% {
-    top: 112px;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
   }
   100% {
-    top: 100px;
+    transform: translateY(-20px);
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
   }
 }
 
 .icon-love {
   position: absolute;
-  top: 152px;
-  left: -34px;
+  top: 51px;
+  left: -108px;
   animation-name: love;
   -webkit-animation-name: love;
   animation-iteration-count: infinite;
@@ -494,10 +507,18 @@ button {
 
 @keyframes love {
   0% {
-    top: 152px;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
   }
   100% {
-    top: 140px;
+    transform: translateY(-20px);
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
   }
 }
 
@@ -1211,7 +1232,7 @@ input#submit {
   }
   .contact__img {
     position: relative;
-    left: 0px;
+    left: 10px;
     top: 0px;
     max-width: 731px;
     margin: 60px auto 0;
@@ -1229,6 +1250,27 @@ input#submit {
     max-width: 281px;
     margin: 0 auto;
     display: block;
+  }
+  .speaker {
+    top: 65px;
+    left: 320px;
+  }
+  .speaker-shadow {
+    top: 135px;
+    left: 237px;
+  }
+  .icon-love {
+    top: 150px;
+    left: 64px;
+  }
+  .icon-like {
+    top: 100px;
+    left: auto;
+    right: 100px;
+  }
+  .about__img {
+    margin: 0 auto;
+    max-width: 688px;
   }
 }
 
@@ -1342,6 +1384,29 @@ input#submit {
   .footer__copyright {
     text-align: center;
   }
+  .about-img {
+    width: 500px;
+  }
+  .speaker {
+    top: 44px;
+    left: 232px;
+    width: 109px;
+  }
+  .speaker-shadow {
+    top: 100px;
+    left: 158px;
+    width: 200px;
+  }
+  .icon-love {
+    top: 97px;
+    left: 45px;
+    width: 62px;
+  }
+  .icon-like {
+    top: 65px;
+    right: 70px;
+    width: 42px;
+  }
 }
 
 @media (max-width: 769px) {
@@ -1443,6 +1508,26 @@ input#submit {
     top: 10px;
     left: 10px;
   }
+  .speaker {
+    top: 33px;
+    left: 158px;
+    width: 89px;
+  }
+  .speaker-shadow {
+    top: 78px;
+    left: 107px;
+    width: 150px;
+  }
+  .icon-love {
+    top: 77px;
+    left: 10px;
+    width: 52px;
+  }
+  .icon-like {
+    top: 52px;
+    right: 60px;
+    width: 32px;
+  }
 }
 
 @media (max-width: 426px) {
@@ -1514,5 +1599,34 @@ input#submit {
   .try-img-mobile {
     display: block;
     max-width: 320px;
+  }
+  .about-img {
+    width: 300px;
+    margin: 0 auto;
+    transform: translateX(-30px);
+    -webkit-transform: translateX(-30px);
+    -moz-transform: translateX(-30px);
+    -ms-transform: translateX(-30px);
+    -o-transform: translateX(-30px);
+  }
+  .speaker {
+    top: 25px;
+    left: 105px;
+    width: 70px;
+  }
+  .speaker-shadow {
+    top: 58px;
+    left: 57px;
+    width: 130px;
+  }
+  .icon-love {
+    top: 64px;
+    left: -2px;
+    width: 32px;
+  }
+  .icon-like {
+    top: 48px;
+    right: 60px;
+    width: 25px;
   }
 }
