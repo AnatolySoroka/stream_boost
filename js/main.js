@@ -43,5 +43,6 @@ burgerBtn.addEventListener('click', onBurgerBtn);
 
 function onBurgerBtn() {
     document.querySelector('.menu').classList.toggle('show');
-    document.querySelector('.header__btn').classList.toggle('show')
+    document.querySelector('.header__btn').classList.toggle('show');
+    document.querySelector('body').classList.toggle('show');
 }

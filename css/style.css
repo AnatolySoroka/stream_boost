@@ -17,7 +17,6 @@ body {
 }
 
 body {
-  /* overflow-y: hidden; */
   overflow-x: hidden;
   font-family: "Inter";
   font-weight: 400;
@@ -114,6 +113,27 @@ button {
   -o-transition: all 0.3s ease;
   font-weight: 600;
   color: #000;
+}
+
+body.show {
+  overflow-y: hidden;
+}
+
+section {
+  transition: all 0.7s ease;
+  -webkit-transition: all 0.7s ease;
+  -moz-transition: all 0.7s ease;
+  -ms-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+}
+
+body.show section {
+  opacity: 0;
+  transform: translate(50px, 50px);
+  -webkit-transform: translate(50px, 50px);
+  -moz-transform: translate(50px, 50px);
+  -ms-transform: translate(50px, 50px);
+  -o-transform: translate(50px, 50px);
 }
 
 /* MOBILE HEADER */
@@ -380,6 +400,7 @@ button {
   justify-content: space-between;
   flex-direction: row-reverse;
   padding: 110px 96px;
+  z-index: 10;
   /* overflow: hidden; */
 }
 
@@ -579,12 +600,17 @@ button {
 .about__bottom {
   position: relative;
   background-color: #ffb87f;
-  width: 97%;
+  width: 96%;
   margin: 0 auto;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  padding: 30px 80px;
+  padding: 50px 80px 30px;
   overflow: hidden;
+  transform: translateY(-20px);
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
 }
 
 .about__items {
@@ -1429,6 +1455,8 @@ input#submit {
     -o-transform: translate(-50px, -50px);
     opacity: 0;
     visibility: hidden;
+    z-index: -100;
+    /* background-color: red; */
     /* height: 0; */
   }
   .menu.show {
@@ -1683,9 +1711,15 @@ input#submit {
   .world-map-mobile {
     display: block;
   }
+  .about__bottom {
+    width: 95%;
+  }
 }
 
 @media (max-width: 426px) {
+  .about__bottom {
+    width: 93%;
+  }
   .heading__offer {
     margin: 40px auto 33px 0;
   }
