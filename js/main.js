@@ -42,6 +42,7 @@ const burgerBtn = document.querySelector('.burger__btn');
 burgerBtn.addEventListener('click', onBurgerBtn);
 
 function onBurgerBtn() {
+    document.querySelector('.burger__btn').classList.toggle('active');
     document.querySelector('.menu').classList.toggle('show');
     document.querySelector('.header__btn').classList.toggle('show');
     document.querySelector('body').classList.toggle('show');

@@ -129,11 +129,22 @@ section {
 
 body.show section {
   opacity: 0;
+  visibility: hidden;
   transform: translate(50px, 50px);
   -webkit-transform: translate(50px, 50px);
   -moz-transform: translate(50px, 50px);
   -ms-transform: translate(50px, 50px);
   -o-transform: translate(50px, 50px);
+}
+
+.menu.publisher.show .menu-rocket {
+  top: 28px;
+  right: 30px;
+}
+
+.menu.publisher.show .menu-img {
+  right: 35px;
+  bottom: -19px;
 }
 
 /* MOBILE HEADER */
