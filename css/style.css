@@ -147,6 +147,46 @@ body.show section {
   bottom: -19px;
 }
 
+.burger__btn {
+  position: relative;
+  display: none;
+  border: none;
+  cursor: pointer;
+  width: 28px;
+  height: 22px;
+}
+
+.burger__btn svg rect {
+  position: absolute;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+}
+
+.burger__btn.active svg rect:first-child {
+  transform: rotate(45deg) translate(3px, -3px);
+  -webkit-transform: rotate(45deg) translate(3px, -3px);
+  -moz-transform: rotate(45deg) translate(3px, -3px);
+  -ms-transform: rotate(45deg) translate(3px, -3px);
+  -o-transform: rotate(45deg) translate(3px, -3px);
+}
+
+.burger__btn.active svg rect:nth-child(2) {
+  width: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.burger__btn.active svg rect:last-child {
+  transform: rotate(-45deg) translate(-12px, -4px);
+  -webkit-transform: rotate(-45deg) translate(-12px, -4px);
+  -moz-transform: rotate(-45deg) translate(-12px, -4px);
+  -ms-transform: rotate(-45deg) translate(-12px, -4px);
+  -o-transform: rotate(-45deg) translate(-12px, -4px);
+}
+
 /* HEADER SECTION */
 .header__inner {
   padding: 20px 0;
