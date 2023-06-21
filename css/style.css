@@ -137,12 +137,12 @@ body.show section {
   -o-transform: translate(50px, 50px);
 }
 
-.menu.publisher.show .menu-rocket {
+.menu.publisher .menu-rocket {
   top: 28px;
   right: 30px;
 }
 
-.menu.publisher.show .menu-img {
+.menu.publisher .menu-img {
   right: 35px;
   bottom: -19px;
 }
