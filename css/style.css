@@ -1135,6 +1135,7 @@ input#submit {
 
 .try__text {
   margin: 30px 0;
+  color: var(--dimGrayBlue);
 }
 
 .try__btn {
@@ -1250,6 +1251,9 @@ input#submit {
 .heading__subtitle {
   margin: 20px 0 40px;
   color: var(--dimGrayBlue);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 .heading__buttons {
@@ -1748,18 +1752,26 @@ input#submit {
   .heading__buttons a {
     width: 281px;
   }
+  .heading__img {
+    transform: translateX(-40px);
+    -webkit-transform: translateX(-40px);
+    -moz-transform: translateX(-40px);
+    -ms-transform: translateX(-40px);
+    -o-transform: translateX(-40px);
+  }
+
   .heading__img,
   .heading-img {
-    width: 350px;
+    width: 430px;
   }
   .check-icon {
-    top: 112px;
-    left: 79px;
+    top: 140px;
+    left: 90px;
     width: 40px;
   }
   .check-icon-shadow {
-    top: 128px;
-    left: 46px;
+    top: 163px;
+    left: 57px;
     width: 60px;
   }
   .rocket-img {
@@ -1854,36 +1866,46 @@ input#submit {
     top: 125px;
   }
   .try-img-mobile {
+    max-width: 360px;
     display: block;
-    max-width: 320px;
+    transform: translateX(8px);
+    -webkit-transform: translateX(8px);
+    -moz-transform: translateX(8px);
+    -ms-transform: translateX(8px);
+    -o-transform: translateX(8px);
   }
   .about-img {
-    width: 300px;
     margin: 0 auto;
-    transform: translateX(-10px);
-    -webkit-transform: translateX(-10px);
-    -moz-transform: translateX(-10px);
-    -ms-transform: translateX(-10px);
-    -o-transform: translateX(-10px);
+    transform: translateX(-48px);
+    -webkit-transform: translateX(-48px);
+    -moz-transform: translateX(-48px);
+    -ms-transform: translateX(-48px);
+    -o-transform: translateX(-48px);
+  }
+  .about__img {
+    max-width: 380px;
   }
   .speaker {
     top: 25px;
     left: 125px;
-    width: 70px;
+    /* width: 70px; */
   }
   .speaker-shadow {
-    top: 58px;
-    left: 77px;
-    width: 130px;
+    top: 75px;
+    left: 78px;
+    /* width: 130px; */
   }
   .icon-love {
     top: 64px;
-    left: 18px;
-    width: 32px;
+    left: 0px;
+    /* width: 32px; */
   }
   .icon-like {
     top: 48px;
-    right: 40px;
-    width: 25px;
+    right: 80px;
+    /* width: 25px; */
+  }
+  .hero__offer {
+    margin-top: 60px;
   }
 }
