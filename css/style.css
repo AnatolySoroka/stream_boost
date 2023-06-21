@@ -225,6 +225,7 @@ body.show section {
 
 .hero__inner {
   position: relative;
+  z-index: 20;
 }
 
 .hero__img {
@@ -1209,6 +1210,7 @@ input#submit {
 
 .heading__inner {
   position: relative;
+  z-index: 20;
 }
 
 .heading__offer {
@@ -1468,6 +1470,7 @@ input#submit {
     -ms-transform: translate(0px, 0px);
     -o-transform: translate(0px, 0px);
     visibility: visible;
+    z-index: 100;
     /* height: auto; */
   }
   .menu-rocket {
