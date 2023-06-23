@@ -775,12 +775,12 @@ body.show section {
 }
 
 .world__inner img {
-  /* transform: translateX(-80px);
+  max-width: 1030px;
+  transform: translateX(-80px);
   -webkit-transform: translateX(-80px);
   -moz-transform: translateX(-80px);
   -ms-transform: translateX(-80px);
-  -o-transform: translateX(-80px); */
-  max-width: 840px;
+  -o-transform: translateX(-80px);
 }
 
 .graphic {
@@ -850,9 +850,9 @@ body.show section {
   position: absolute;
   top: -4px;
   left: 0px;
-  width: 26px;
-  height: 26px;
-  background-image: url("../images/check-mark.png");
+  width: 28px;
+  height: 28px;
+  background-image: url("../images/check-mark.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
