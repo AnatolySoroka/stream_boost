@@ -948,11 +948,11 @@ body.show section .container {
 }
 
 .animate-items {
-  transition: all 1s ease 0.5s;
-  -webkit-transition: all 1s ease 0.5s;
-  -moz-transition: all 1s ease 0.5s;
-  -ms-transition: all 1s ease 0.5s;
-  -o-transition: all 1s ease 0.5s;
+  transition: opacity 1s ease 0.5s, transform 1s ease 0.5s;
+  -webkit-transition: opacity 1s ease 0.5s, transform 1s ease 0.5s;
+  -moz-transition: opacity 1s ease 0.5s, transform 1s ease 0.5s;
+  -ms-transition: opacity 1s ease 0.5s, transform 1s ease 0.5s;
+  -o-transition: opacity 1s ease 0.5s, transform 1s ease 0.5s;
   transform: translateY(-50px);
   -webkit-transform: translateY(-50px);
   -moz-transform: translateY(-50px);
