@@ -17,7 +17,7 @@ window.addEventListener('load', function () {
                 }
 
                 if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
-                    animItem.classList.add('animate');
+                    animItem.className += ' animate';
                 } else {
                     if (!animItem.classList.contains('animate-no-hide')) {
                         animItem.classList.remove('animate');
